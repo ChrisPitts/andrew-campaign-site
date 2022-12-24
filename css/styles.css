@@ -116,4 +116,18 @@ section {
 
 footer {
   padding-bottom: 10px;
+}
+footer label {
+  display: block;
+}
+footer form {
+  width: 80%;
+  margin: auto;
+}
+footer form input {
+  width: 100%;
+}
+footer form textarea {
+  width: 100%;
+  height: 300px;
 }/*# sourceMappingURL=styles.css.map */
