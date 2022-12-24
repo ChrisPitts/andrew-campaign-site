@@ -77,9 +77,15 @@ section{padding: 30px;}
     
 }
 
-.about div{
-        margin: 0 auto 10px auto;
-        width: 50%;
+.about{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        div{
+            width: 40%;
+            img{width: 500px;}
+        }
     
 }
 
@@ -175,7 +181,10 @@ footer{
         }
     }
 
-    .about div{width: 80%;}
+    .about div{
+        width: 80%;
+        &.about-headshot{display: none;}
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -200,7 +209,9 @@ footer{
         }
     }
 
-    .about div{width: 90%;}
+    .about div{
+        width: 90%;
+    }
 
     .endorsements figure{
         width: 60px;

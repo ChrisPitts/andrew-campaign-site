@@ -68,9 +68,16 @@ section {
   align-items: center;
 }
 
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .about div {
-  margin: 0 auto 10px auto;
-  width: 50%;
+  width: 40%;
+}
+.about div img {
+  width: 500px;
 }
 
 .issues .issues-container {
@@ -164,6 +171,9 @@ footer form textarea {
   }
   .about div {
     width: 80%;
+  }
+  .about div.about-headshot {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
