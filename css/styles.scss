@@ -36,7 +36,8 @@ header{
 
 nav{
     float: right;
-
+    width: 60%;
+    margin-right: 10px;
     ul{
         height: 100%;
         display: flex;
@@ -52,7 +53,7 @@ nav{
         }
     }
 
-    width: 60%;
+    
 }
 
 
@@ -68,7 +69,11 @@ section{padding: 30px;}
     article{ width: 50%;}
 
     //REMOVE FOR FINAL PRODUCT
-    img{border: 1px solid black;}
+    img{border: 1px solid black; margin: auto 0 auto 0;}
+    div{
+        display: flex;
+        align-items: center;
+    }
     
 }
 
@@ -96,8 +101,8 @@ section{padding: 30px;}
     }
 
     .button{
-        display: block; 
-        width: 100px;
+        display: block;
+        width: 200px;
         margin: 10px auto 0 auto;
     }
 }
@@ -123,6 +128,7 @@ section{padding: 30px;}
     img{
         width: 80px;
         height: 80px;
+        margin: auto;
     }
 }
 
@@ -150,4 +156,54 @@ footer{
 
     }
     
+}
+
+@media screen and (max-width: 1200px) {
+    
+    nav{width: 80%;}
+
+    iframe{ width: 80%;}
+
+    .issues .issues-container{
+        display: block;
+        margin: auto;
+        width: 90%;
+
+        article{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about div{width: 80%;}
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        background: $nav-color;
+        flex-direction: column;
+        width: 60%;
+        display: none;
+    }
+
+    body{
+        font-size: 1.25em;
+    }
+
+    .hero{
+        display: block;
+        img{margin: auto;}
+        article{
+            margin: auto;
+            width: 80%;
+
+        }
+    }
+
+    .about div{width: 90%;}
+
+    .endorsements figure{
+        width: 60px;
+        img{width: 50px; height: 50px;}
+    }
 }

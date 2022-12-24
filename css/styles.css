@@ -27,6 +27,7 @@ header a {
 nav {
   float: right;
   width: 60%;
+  margin-right: 10px;
 }
 nav ul {
   height: 100%;
@@ -60,6 +61,11 @@ section {
 }
 .hero img {
   border: 1px solid black;
+  margin: auto 0 auto 0;
+}
+.hero div {
+  display: flex;
+  align-items: center;
 }
 
 .about div {
@@ -82,7 +88,7 @@ section {
 }
 .issues .button {
   display: block;
-  width: 100px;
+  width: 200px;
   margin: 10px auto 0 auto;
 }
 
@@ -107,6 +113,7 @@ section {
 .endorsements img {
   width: 80px;
   height: 80px;
+  margin: auto;
 }
 
 .button {
@@ -137,4 +144,56 @@ footer form input {
 footer form textarea {
   width: 100%;
   height: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 80%;
+  }
+  iframe {
+    width: 80%;
+  }
+  .issues .issues-container {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+  .issues .issues-container article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    background: rgba(170, 170, 170, 0.5);
+    flex-direction: column;
+    width: 60%;
+    display: none;
+  }
+  body {
+    font-size: 1.25em;
+  }
+  .hero {
+    display: block;
+  }
+  .hero img {
+    margin: auto;
+  }
+  .hero article {
+    margin: auto;
+    width: 80%;
+  }
+  .about div {
+    width: 90%;
+  }
+  .endorsements figure {
+    width: 60px;
+  }
+  .endorsements figure img {
+    width: 50px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=styles.css.map */
