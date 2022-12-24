@@ -13,12 +13,12 @@ body {
 }
 
 header {
-  background-color: rgba(170, 170, 170, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 30px 10px 30px;
   width: 100%;
   position: fixed;
   top: 0px;
-  z-index: 5;
+  z-index: 1;
 }
 header a {
   float: left;
@@ -43,6 +43,28 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+.burger {
+  position: fixed;
+  background-color: #ccc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  display: none;
+}
+.burger .burger-bar {
+  width: 20px;
+  height: 4px;
+  margin: 2px auto 2px auto;
+  background-color: #000;
+  z-index: 3;
 }
 
 section {
@@ -177,17 +199,34 @@ footer form textarea {
   }
 }
 @media screen and (max-width: 600px) {
-  nav {
-    background: rgba(170, 170, 170, 0.5);
-    flex-direction: column;
-    width: 60%;
+  header {
     display: none;
+    width: 60%;
+    height: 100%;
+    right: 0px;
+  }
+  header #header-logo {
+    display: none;
+  }
+  header nav {
+    height: 100%;
+  }
+  header ul {
+    flex-direction: column;
+    height: 100%;
+  }
+  header.visible {
+    display: block;
+  }
+  .burger {
+    display: flex;
   }
   body {
     font-size: 1.25em;
   }
   .hero {
     display: block;
+    margin-top: 0px;
   }
   .hero img {
     margin: auto;

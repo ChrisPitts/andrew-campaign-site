@@ -7,7 +7,7 @@ $color-5: #fff;
 $text-color-1: $color-1;
 $text-color-2: $color-5;
 
-$nav-color: rgba(170, 170, 170, 0.5);
+$nav-color: rgba(0, 0, 0, 0.7);
 
 html{scroll-behavior: smooth;}
 
@@ -27,7 +27,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0px;
-    z-index: 5;
+    z-index: 1;
 
     a{
         float: left;
@@ -54,6 +54,30 @@ nav{
     }
 
     
+}
+
+.burger{
+    position: fixed;
+    background-color: $color-4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+
+    .burger-bar{
+        width: 20px;
+        height: 4px;
+        margin: 2px auto 2px auto;
+        background-color: #000;
+        z-index: 3;
+
+    }
 }
 
 
@@ -188,11 +212,23 @@ footer{
 }
 
 @media screen and (max-width: 600px){
-    nav{
-        background: $nav-color;
-        flex-direction: column;
-        width: 60%;
+    header{
         display: none;
+        width: 60%;
+        height: 100%;
+        right: 0px;
+
+        #header-logo{display: none;}
+        nav{height: 100%;}
+        ul{
+            flex-direction: column;
+            height: 100%;
+        }
+        &.visible{display: block;}
+    }
+
+    .burger{
+        display: flex;
     }
 
     body{
@@ -201,11 +237,11 @@ footer{
 
     .hero{
         display: block;
+        margin-top: 0px;
         img{margin: auto;}
         article{
             margin: auto;
             width: 80%;
-
         }
     }
 

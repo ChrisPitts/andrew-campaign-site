@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="https://via.placeholder.com/80x30?text=Campaign+Logo" alt="Campaign Logo"></a>
+        <a href="#" id="header-logo"><img src="https://via.placeholder.com/80x30?text=Campaign+Logo" alt="Campaign Logo"></a>
         <nav>
             <ul>
                 <li><a href="#">About</a></li>
@@ -20,6 +20,12 @@
         </nav>
         <div class="burger"></div>
     </header>
+
+    <div class="burger" onclick="onBurgerClick()">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
 
     <!--HERO-->
     <section class="hero">
@@ -136,5 +142,7 @@
             <button type="submit" class="button">Submit</button>
         </form>
     </footer>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
