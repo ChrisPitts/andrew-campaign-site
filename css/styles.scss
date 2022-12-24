@@ -1,0 +1,138 @@
+$color-1: #000;
+$color-2: #555;
+$color-3: #aaa;
+$color-4: #ccc;
+$color-5: #fff;
+
+$text-color-1: $color-1;
+$text-color-2: $color-5;
+
+$nav-color: rgba(170, 170, 170, 0.5);
+
+body{
+    background-color: $color-1;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: $text-color-2;
+}
+
+header{
+    background-color: $nav-color;
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+
+    a{
+        float: left;
+    }
+}
+
+nav{
+    float: right;
+
+    ul{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline;
+            margin: 0;
+
+            a{text-decoration: none; color: $text-color-2;}
+        }
+    }
+
+    width: 60%;
+}
+
+
+
+section{padding: 30px;}
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-4;
+    margin-top: 50px;
+    color: $text-color-1;
+    article{ width: 50%;}
+
+    //REMOVE FOR FINAL PRODUCT
+    img{border: 1px solid black;}
+    
+}
+
+.about div{
+        margin: 0 auto 10px auto;
+        width: 50%;
+    
+}
+
+.issues{
+    .issues-container{
+        display: flex;
+        justify-content: space-evenly;
+    
+        article{
+            padding: 10px;
+            width: 25%;
+            background-color: $color-2;
+            border-radius: 8px;
+    
+            img{width: 100px;}
+        }
+    
+        
+    }
+
+    .button{
+        display: block; 
+        width: 100px;
+        margin: 10px auto 0 auto;
+    }
+}
+
+
+.section-odd{
+    background-color: $color-1;
+    color: $color-5;
+}
+
+.section-even{
+    background-color: $color-2;
+    color: $color-5;
+}
+
+.endorsements{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    figure{width: 100px;}
+
+    img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.button{
+    background: linear-gradient($color-5, $color-1);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.button:hover{
+    background: linear-gradient($color-1, $color-5);
+}
+
+footer{
+    padding-bottom: 10px;
+}

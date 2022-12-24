@@ -1,0 +1,119 @@
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  background-color: rgba(170, 170, 170, 0.5);
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+header a {
+  float: left;
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 30px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ccc;
+  margin-top: 50px;
+  color: #000;
+}
+.hero article {
+  width: 50%;
+}
+.hero img {
+  border: 1px solid black;
+}
+
+.about div {
+  margin: 0 auto 10px auto;
+  width: 50%;
+}
+
+.issues .issues-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.issues .issues-container article {
+  padding: 10px;
+  width: 25%;
+  background-color: #555;
+  border-radius: 8px;
+}
+.issues .issues-container article img {
+  width: 100px;
+}
+.issues .button {
+  display: block;
+  width: 100px;
+  margin: 10px auto 0 auto;
+}
+
+.section-odd {
+  background-color: #000;
+  color: #fff;
+}
+
+.section-even {
+  background-color: #555;
+  color: #fff;
+}
+
+.endorsements {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.endorsements figure {
+  width: 100px;
+}
+.endorsements img {
+  width: 80px;
+  height: 80px;
+}
+
+.button {
+  background: linear-gradient(#fff, #000);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.button:hover {
+  background: linear-gradient(#000, #fff);
+}
+
+footer {
+  padding-bottom: 10px;
+}/*# sourceMappingURL=styles.css.map */
