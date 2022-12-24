@@ -9,6 +9,8 @@ $text-color-2: $color-5;
 
 $nav-color: rgba(170, 170, 170, 0.5);
 
+html{scroll-behavior: smooth;}
+
 body{
     background-color: $color-1;
     box-sizing: border-box;
@@ -127,6 +129,9 @@ section{padding: 30px;}
     background: linear-gradient($color-5, $color-1);
     border-radius: 8px;
     padding: 5px;
+    text-decoration: none;
+    color: $color-5;
+    
 }
 
 .button:hover{
